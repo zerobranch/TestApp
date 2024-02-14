@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="utils_android_title_share">Share</string>
+    <string name="utils_android_base_error">An error has occurred</string>
+    <string name="utils_android_email_client_not_found">Email client not found</string>
+    <string name="utils_android_choose_email_client">Choose an email client</string>
+</resources>

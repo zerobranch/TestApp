@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_container"
+        style="@style/CommonDefaultCardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/common_spacing_12"
+        android:minHeight="200dp"
+        app:rippleColor="@color/common_transparent"
+        tools:background="@color/common_bg_primary"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingVertical="@dimen/common_spacing_12"
+            tools:itemCount="10"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib_edit"
+            style="@style/CommonRoundRectButtonStyle"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end|top"
+            android:layout_marginTop="@dimen/common_spacing_2"
+            android:layout_marginEnd="@dimen/common_spacing_2"
+            android:padding="@dimen/common_spacing_8"
+            android:src="@drawable/common_ic_edit"
+            android:tint="@color/common_tertiary_btn_text_color"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_words"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingVertical="@dimen/common_spacing_16"
+        android:paddingBottom="@dimen/common_spacing_8"
+        tools:itemCount="10"
+        tools:listitem="@layout/common_item_word"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/common_spacing_16"
+        android:layout_marginBottom="@dimen/common_spacing_24"
+        android:contentDescription="@string/common_title_add_word"
+        app:srcCompat="@drawable/common_ic_cyclone"
+        app:tint="@color/common_beebox_blue"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

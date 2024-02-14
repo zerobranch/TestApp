@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rv_training"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_primary"
+    android:clipToPadding="false"
+    android:paddingHorizontal="@dimen/common_spacing_8"
+    android:paddingVertical="@dimen/common_spacing_16"
+    tools:itemCount="10"
+    tools:listitem="@layout/item_training_title"
+    />

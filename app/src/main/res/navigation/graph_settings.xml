@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_root"
+    app:startDestination="@id/settings_screen"
+    >
+
+    <fragment
+        android:id="@+id/settings_screen"
+        android:name="com.github.zerobranch.beebox.settings.SettingsFragment"
+        android:label="@string/common_title_settings"
+        tools:layout="@layout/fragment_settings"
+        >
+        <action
+            android:id="@+id/action_settings_to_backup_screen"
+            app:destination="@id/backup_screen"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/backup_screen"
+        android:name="com.github.zerobranch.beebox.backup.BackupFragment"
+        android:label="@string/common_backup"
+        tools:layout="@layout/fragment_backup"
+        >
+
+        <deepLink app:uri="beebox://navigate/backup?args={db_backup_uri_key}" />
+
+    </fragment>
+
+</navigation>

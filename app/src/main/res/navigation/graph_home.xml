@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_root"
+    app:startDestination="@+id/home_screen"
+    >
+
+    <fragment
+        android:id="@+id/home_screen"
+        android:name="com.github.zerobranch.beebox.home.HomeFragment"
+        android:label="@string/common_title_home"
+        tools:layout="@layout/fragment_home"
+        >
+        <action
+            android:id="@+id/action_home_screen_to_training_settings_screen"
+            app:destination="@id/training_settings_screen"
+            />
+        <action
+            android:id="@+id/action_home_screen_to_recent_trainings_dialog"
+            app:destination="@id/recent_trainings_dialog"
+            />
+    </fragment>
+
+    <dialog
+        android:id="@+id/training_settings_screen"
+        android:name="com.github.zerobranch.beebox.training_settings_dialog.TrainingSettingsDialog"
+        android:label="@string/common_title_training_settings"
+        tools:layout="@layout/dialog_training_settings"
+        >
+        <action
+            android:id="@+id/action_training_settings_screen_to_choose_category_dialog_screen"
+            app:destination="@id/choose_category_dialog_screen"
+            />
+        <action
+            android:id="@+id/action_training_settings_screen_to_choose_type_dialog_screen"
+            app:destination="@id/choose_type_dialog_screen"
+            />
+        <action
+            android:id="@+id/action_training_settings_screen_to_training_screen"
+            app:destination="@id/training_screen"
+            />
+    </dialog>
+
+    <dialog
+        android:id="@+id/choose_type_dialog_screen"
+        android:name="com.github.zerobranch.beebox.choose_type_dialog.ChooseTypeDialog"
+        android:label="@string/common_title_choose_type"
+        tools:layout="@layout/dialog_choose_type"
+        >
+        <action
+            android:id="@+id/action_choose_type_dialog_screen_to_simple_dialog_screen"
+            app:destination="@id/simple_dialog_screen"
+            />
+        <action
+            android:id="@+id/action_choose_type_dialog_screen_to_word_type_dialog_screen"
+            app:destination="@id/word_type_dialog_screen"
+            />
+    </dialog>
+
+    <dialog
+        android:id="@+id/choose_category_dialog_screen"
+        android:name="com.github.zerobranch.beebox.choose_category_dialog.ChooseCategoryDialog"
+        android:label="@string/common_title_choose_category"
+        tools:layout="@layout/dialog_choose_category"
+        >
+        <action
+            android:id="@+id/action_choose_category_dialog_screen_to_simple_dialog_screen"
+            app:destination="@id/simple_dialog_screen"
+            />
+        <action
+            android:id="@+id/action_choose_category_dialog_screen_to_category_dialog_screen"
+            app:destination="@id/category_dialog_screen"
+            />
+    </dialog>
+
+    <dialog
+        android:id="@+id/category_dialog_screen"
+        android:name="com.github.zerobranch.beebox.category_dialog.CategoryDialog"
+        android:label="@string/common_title_create_category"
+        tools:layout="@layout/dialog_category"
+        />
+
+    <dialog
+        android:id="@+id/simple_dialog_screen"
+        android:name="com.github.zerobranch.beebox.simple_dialog.SimpleDialog"
+        android:label="@string/common_title_dialog"
+        tools:layout="@layout/dialog_simple"
+        />
+
+    <dialog
+        android:id="@+id/word_type_dialog_screen"
+        android:name="com.github.zerobranch.beebox.word_type_dialog.WordTypeDialog"
+        android:label="@string/common_title_create_word_type"
+        tools:layout="@layout/dialog_word_type"
+        />
+
+    <fragment
+        android:id="@+id/training_screen"
+        android:name="com.github.zerobranch.beebox.training.TrainingFragment"
+        android:label="@string/common_title_training"
+        tools:layout="@layout/fragment_training"
+        >
+        <action
+            android:id="@+id/action_training_screen_to_add_word_dialog"
+            app:destination="@id/add_word_dialog"
+            />
+    </fragment>
+
+    <dialog
+        android:id="@+id/add_word_dialog"
+        android:name="com.github.zerobranch.beebox.add_word_dialog.AddWordDialog"
+        android:label="@string/common_title_add_word"
+        tools:layout="@layout/dialog_add_word"
+        >
+        <action
+            android:id="@+id/action_add_screen_to_choose_category_dialog_screen"
+            app:destination="@id/choose_category_dialog_screen"
+            />
+        <action
+            android:id="@+id/action_add_word_screen_to_choose_type_dialog_screen"
+            app:destination="@id/choose_type_dialog_screen"
+            />
+        <action
+            android:id="@+id/action_add_word_dialog_to_local_search_dialog_screen"
+            app:destination="@id/local_search_dialog_screen"
+            />
+    </dialog>
+
+    <dialog
+        android:id="@+id/local_search_dialog_screen"
+        android:name="com.github.zerobranch.beebox.local_search.LocalSearchDialog"
+        android:label="@string/common_title_search"
+        tools:layout="@layout/dialog_local_search"
+        />
+
+    <dialog
+        android:id="@+id/recent_trainings_dialog"
+        android:name="com.github.zerobranch.beebox.recent_trainings_dialog.RecentTrainingsDialog"
+        android:label="@string/common_title_recent_trainings"
+        tools:layout="@layout/dialog_recent_trainings"
+        >
+        <action
+            android:id="@+id/action_recent_trainings_dialog_to_training_screen"
+            app:destination="@id/training_screen"
+            />
+        <action
+            android:id="@+id/action_recent_trainings_dialog_to_simple_dialog_screen"
+            app:destination="@id/simple_dialog_screen"
+            />
+    </dialog>
+
+</navigation>

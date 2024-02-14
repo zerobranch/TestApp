@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/common_title_settings"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_settings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg_primary"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/common_spacing_16"
+        android:paddingBottom="@dimen/common_spacing_30"
+        tools:itemCount="10"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_default_text"
+        tools:orientation="vertical"
+        />
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_white"
+    android:foreground="?selectableItemBackground"
+    >
+
+    <View
+        android:id="@+id/v_selector"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/common_selected_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_word"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_spacing_16"
+        android:layout_marginEnd="@dimen/common_spacing_8"
+        android:textAppearance="?DefaultMedium"
+        android:textColor="@color/common_text_primary"
+        app:layout_constraintEnd_toStartOf="@id/tv_type_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Слова из сериала"
+        tools:textSize="15sp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_translate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-6dp"
+        android:layout_marginEnd="@dimen/common_spacing_8"
+        android:paddingBottom="@dimen/common_spacing_8"
+        android:textAppearance="?DefaultSemiBold"
+        android:textColor="@color/common_text_secondary"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/tv_creation_date"
+        app:layout_constraintStart_toStartOf="@id/tv_word"
+        app:layout_constraintTop_toBottomOf="@id/tv_word"
+        tools:text="Описание категории"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_creation_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_spacing_4"
+        android:textAppearance="?DefaultSemiBold"
+        android:textColor="@color/common_text_secondary"
+        android:textSize="13sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_translate"
+        app:layout_constraintEnd_toEndOf="@id/tv_category_count"
+        tools:text="15.04.2023"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_type_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/common_spacing_8"
+        android:drawablePadding="@dimen/common_spacing_2"
+        android:textAppearance="?DefaultBold"
+        android:textColor="@color/common_middle_yellow"
+        android:textSize="15sp"
+        app:drawableStartCompat="@drawable/common_ic_type"
+        app:drawableTint="@color/common_middle_yellow"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_word"
+        app:layout_constraintEnd_toStartOf="@id/tv_category_count"
+        tools:text="10"
+        tools:textSize="13sp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_category_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/common_spacing_16"
+        android:drawablePadding="@dimen/common_spacing_2"
+        android:textAppearance="?DefaultBold"
+        android:textColor="@color/common_middle_yellow"
+        android:textSize="15sp"
+        app:drawableStartCompat="@drawable/common_ic_category"
+        app:drawableTint="@color/common_middle_yellow"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="10"
+        tools:textSize="13sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_parent"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="@dimen/common_spacing_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_type_count"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common_ic_parent"
+        app:tint="@color/common_text_primary"
+        />
+
+    <View
+        android:id="@+id/v_selector_end"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/common_selector_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

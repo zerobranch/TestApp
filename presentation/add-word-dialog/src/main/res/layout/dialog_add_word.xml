@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/common_bg_primary"
+    >
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ib_apply"
+        style="@style/CommonRoundRectButtonStyle"
+        android:layout_marginTop="@dimen/common_spacing_16"
+        android:layout_marginEnd="@dimen/common_spacing_12"
+        android:padding="@dimen/common_spacing_8"
+        android:tint="@color/common_text_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/common_ic_check"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_items"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/common_spacing_8"
+        android:paddingBottom="@dimen/common_spacing_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ib_apply"
+        tools:itemCount="1"
+        tools:listitem="@layout/common_item_adding_word"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

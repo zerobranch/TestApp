@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textview.MaterialTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_comment"
+    style="@style/CommonTextBoxStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/common_spacing_8"
+    android:layout_marginTop="@dimen/common_spacing_8"
+    android:background="@drawable/common_bg_transcription"
+    android:paddingVertical="@dimen/common_spacing_12"
+    android:backgroundTint="@null"
+    tools:text="Comment"
+    tools:textSize="15sp"
+    />

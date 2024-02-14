@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="isLazyChecked" format="boolean" />
+
+    <declare-styleable name="CheckableMaterialButton">
+        <attr name="isLazyChecked" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckableImageButton">
+        <attr name="isLazyChecked" />
+    </declare-styleable>
+
+    <declare-styleable name="BeeboxProgressBar">
+        <attr name="show" format="boolean" />
+        <attr name="showWrapper" format="boolean" />
+        <attr name="wrapperAlpha" format="float" />
+
+        <attr name="size" format="enum">
+            <enum name="small" value="0" />
+            <enum name="large" value="1" />
+        </attr>
+
+        <attr name="customBaseColor" format="color|reference" />
+
+        <attr name="baseColor" format="enum">
+            <enum name="white" value="0" />
+            <enum name="blue" value="1" />
+            <enum name="custom" value="2" />
+        </attr>
+
+        <attr name="showMode" format="enum">
+            <enum name="none" value="0" />
+            <enum name="scale" value="1" />
+        </attr>
+
+    </declare-styleable>
+
+    <attr name="notificationViewStyle" type="reference" />
+
+    <declare-styleable name="NotificationView">
+        <attr name="actionRippleColor" format="color|reference" />
+        <attr name="backgroundTint" format="color|reference" />
+
+        <attr name="leftIconTint" format="color|reference" />
+
+        <attr name="titleTextColor" format="color|reference" />
+        <attr name="subtitleTextColor" format="color|reference" />
+        <attr name="actionTextColor" format="color|reference" />
+
+        <attr name="subtitleTextAppearance" format="reference" />
+        <attr name="titleTextAppearance" format="reference" />
+        <attr name="actionTextAppearance" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ShadowView">
+        <attr name="shadowOffset" format="dimension|reference" />
+        <attr name="shadowBlurRadius" format="dimension|reference" />
+        <attr name="rectRadius" format="dimension|reference" />
+        <attr name="shadowColor" format="color|reference" />
+        <attr name="shadowDirection" format="integer">
+            <flag name="top" value="1" />
+            <flag name="bottom" value="2" />
+        </attr>
+    </declare-styleable>
+
+</resources>

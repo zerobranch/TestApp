@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CommonH1">
+        <item name="android:textSize">21sp</item>
+        <item name="android:fontFamily">@font/merienda_bold</item>
+        <item name="lineHeight">30sp</item>
+    </style>
+
+    <style name="CommonSmallMedium">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/merienda_medium</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+
+    <style name="CommonH2">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/merienda_extra_bold</item>
+        <item name="lineHeight">25sp</item>
+    </style>
+
+    <style name="CommonDefaultSemiBold">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/merienda_semi_bold</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+
+    <style name="CommonDefaultMedium">
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/merienda_bold</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+
+    <style name="CommonDefaultBold">
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/merienda_extra_bold</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+
+    <style name="CommonSecondBold">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/merienda_regular</item>
+        <item name="lineHeight">22sp</item>
+    </style>
+
+
+    <style name="TabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/merienda_medium</item>
+        <item name="lineHeight">20sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+</resources>

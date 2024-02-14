@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/notification_view_bg_rounded"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingVertical="10dp"
+    >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/notification_view_left_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:tint="#FF6F68"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/notification_view_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toTopOf="@id/notification_view_subtitle"
+        app:layout_constraintEnd_toStartOf="@id/notification_view_action"
+        app:layout_constraintStart_toEndOf="@id/notification_view_left_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Нет подключения к интеренету"
+        tools:textColor="#ffffff"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/notification_view_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/notification_view_action"
+        app:layout_constraintStart_toEndOf="@id/notification_view_left_icon"
+        app:layout_constraintTop_toBottomOf="@id/notification_view_title"
+        tools:text="Последнее обновление 28.03 в 18:15"
+        tools:textColor="#8D96B2"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/notification_view_action"
+        style="@style/NotificationViewButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Обновить"
+        tools:textColor="#A2C4FF"
+        />
+
+    <com.github.zerobranch.beebox.commons_view.BeeboxProgressBar
+        android:id="@+id/notification_view_loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        app:baseColor="custom"
+        app:customBaseColor="#98B4E2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:show="false"
+        app:showMode="none"
+        app:showWrapper="false"
+        app:size="small"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_categories"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_spacing_16"
+        android:layout_marginTop="@dimen/common_spacing_16"
+        android:layout_marginEnd="@dimen/common_spacing_8"
+        android:text="@string/common_title_choose_category"
+        android:textAppearance="?H2"
+        android:textColor="@color/common_text_primary"
+        app:layout_constraintEnd_toStartOf="@id/ib_add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textSize="15sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ib_add"
+        style="@style/CommonRoundRectButtonStyle"
+        android:layout_marginEnd="@dimen/common_spacing_12"
+        android:src="@drawable/common_ic_add"
+        android:tint="@color/common_text_primary"
+        app:layout_constraintBottom_toBottomOf="@id/tv_categories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_categories"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_categories"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingVertical="@dimen/common_spacing_2"
+        android:paddingBottom="@dimen/common_spacing_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_categories"
+        tools:itemCount="10"
+        tools:listitem="@layout/common_item_category"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

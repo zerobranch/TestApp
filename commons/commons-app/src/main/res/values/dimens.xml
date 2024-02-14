@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_anchor_height">5dp</dimen>
+    <dimen name="common_anchor_width">70dp</dimen>
+    <dimen name="common_anchor_radius">2.5dp</dimen>
+
+    <!--  radius  -->
+    <dimen name="common_corner_radius">8dp</dimen>
+    <dimen name="common_button_radius">20dp</dimen>
+
+    <!--  spacing  -->
+    <dimen name="common_spacing_80">80dp</dimen>
+    <dimen name="common_spacing_64">64dp</dimen>
+    <dimen name="common_spacing_50">50dp</dimen>
+    <dimen name="common_spacing_40">40dp</dimen>
+    <dimen name="common_spacing_32">32dp</dimen>
+    <dimen name="common_spacing_30">30dp</dimen>
+    <dimen name="common_spacing_28">28dp</dimen>
+    <dimen name="common_spacing_25">25dp</dimen>
+    <dimen name="common_spacing_24">24dp</dimen>
+    <dimen name="common_spacing_20">20dp</dimen>
+    <dimen name="common_spacing_16">16dp</dimen>
+    <dimen name="common_spacing_15">15dp</dimen>
+    <dimen name="common_spacing_12">12dp</dimen>
+    <dimen name="common_spacing_10">10dp</dimen>
+    <dimen name="common_spacing_8">8dp</dimen>
+    <dimen name="common_spacing_6">6dp</dimen>
+    <dimen name="common_spacing_5">5dp</dimen>
+    <dimen name="common_spacing_4">4dp</dimen>
+    <dimen name="common_spacing_2">2dp</dimen>
+
+    <dimen name="common_root_toolbar_height">48dp</dimen>
+
+    <dimen name="common_image_button_height">40dp</dimen>
+    <dimen name="common_small_image_button_height">30dp</dimen>
+
+    <dimen name="common_field_height">40dp</dimen>
+    <dimen name="common_swipe_refresh_layout_offset">100dp</dimen>
+    <dimen name="common_3d_touch_content_radius">15dp</dimen>
+
+</resources>

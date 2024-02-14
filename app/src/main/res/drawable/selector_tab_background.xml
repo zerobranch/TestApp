@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="@android:integer/config_shortAnimTime"
+    android:exitFadeDuration="0">
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:gravity="center">
+                <shape android:shape="oval">
+                    <size android:width="@dimen/navigation_indicator_size"
+                        android:height="@dimen/navigation_indicator_size" />
+                    <solid android:color="@color/common_primary" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

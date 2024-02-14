@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="dividerItemStyle" type="reference" />
+
+    <declare-styleable name="DividerItem">
+        <!-- Color of the divider. -->
+        <attr name="dividerItemColor" format="color|reference" />
+
+        <!-- Thickness of the divider. -->
+        <attr name="dividerItemThickness" format="dimension" />
+
+        <!-- Start indent of the divider. -->
+        <attr name="dividerInsetEnd" />
+
+        <!-- End indent of the divider. -->
+        <attr name="dividerInsetStart" />
+
+        <!-- Whether the MaterialDividerItemDecoration class should draw a divider
+        after the last item of the recycler view. True by default. -->
+        <attr name="showLastItemDecoration" format="boolean"/>
+
+    </declare-styleable>
+
+</resources>

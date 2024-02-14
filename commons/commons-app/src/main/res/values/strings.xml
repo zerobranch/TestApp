@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Beebox</string>
+    <string name="common_title_settings">Settings</string>
+    <string name="common_title_home">Home</string>
+    <string name="common_title_auth">Auth</string>
+    <string name="common_title_add_word">Add Word</string>
+    <string name="common_title_appearance">Appearance</string>
+    <string name="common_title_choose_category">Choose Category</string>
+    <string name="common_title_choose_type">Choose Type</string>
+    <string name="common_title_dialog">Dialog</string>
+    <string name="common_title_create_category">Create Category</string>
+    <string name="common_title_edit_category">Edit Category</string>
+    <string name="common_title_create_word_type">Create Word Type</string>
+    <string name="common_title_edit_word_type">Edit Word Type</string>
+    <string name="common_title_search">Search</string>
+    <string name="common_title_word_group">Word group</string>
+    <string name="common_title_words_list">Word list</string>
+    <string name="common_title_lists">List</string>
+    <string name="common_title_pin_code">Pin Code</string>
+    <string name="common_title_words">Words</string>
+    <string name="common_title_categories">Categories</string>
+    <string name="common_title_types">Types</string>
+    <string name="common_title_training_settings">Training Settings</string>
+    <string name="common_title_training">Training</string>
+    <string name="common_title_recent_trainings">Recent trainings</string>
+    <string name="common_title_added">Added</string>
+    <string name="common_title_not">Not</string>
+
+    <string name="common_error_default">An error has occurred</string>
+    <string name="common_error_no_internet">No internet connection</string>
+    <string name="common_title_connection_restored">Connection restored</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_continue_title">Continue</string>
+    <string name="common_update">Update</string>
+    <string name="common_apply">Apply</string>
+    <string name="common_delete">Delete</string>
+    <string name="common_name">Name</string>
+    <string name="common_create">Create</string>
+    <string name="common_backup">Backup</string>
+    <string name="common_add">Add</string>
+    <string name="common_launch">Launch</string>
+    <string name="common_previous">Previous</string>
+    <string name="common_next">Next</string>
+    <string name="common_exit">Exit</string>
+    <string name="common_save">Save</string>
+    <string name="common_export">Export</string>
+    <string name="common_import">Import</string>
+    <string name="common_edit">Edit</string>
+    <string name="common_description">Description</string>
+    <string name="common_title_ok">ОК</string>
+    <string name="common_action_go">Go</string>
+    <string name="common_back">Back</string>
+    <string name="common_choose_email_client">Choose an email client</string>
+    <string name="common_email_client_not_found">Email client not found</string>
+    <string name="common_title_share">Share</string>
+
+    <string name="common_search_word">Search Words</string>
+    <string name="common_word_type">Word Type</string>
+    <string name="common_word_parent">Word Parent</string>
+    <string name="common_category">Category</string>
+    <string name="common_categories">Categories</string>
+    <string name="common_translate">Translate</string>
+    <string name="common_transcription">Transcription</string>
+    <string name="common_comment">Comment</string>
+    <string name="common_word">Word</string>
+    <string name="common_add_category">Add Category</string>
+    <string name="common_word_parent_title">Parent</string>
+
+    <string name="common_contains_words_title">\'%s\' will be deleted</string>
+    <string name="common_contains_child_words_title">\'%s\' contains child words</string>
+    <string name="common_contains_words_in_category_description">The category contains words</string>
+    <string name="common_contains_words_in_type_description">The type contains words</string>
+
+    <string name="common_create_word_validation_error">Not all fields are filled</string>
+    <string name="common_hint_title">Hint</string>
+    <string name="common_title">Title</string>
+    <string name="common_usa_flag">амер.</string>
+    <string name="common_brith_flag">брит.</string>
+    <string name="common_usa_title">US</string>
+    <string name="common_brith_title">UK</string>
+
+    <string name="common_exit_without_save_title">Exit without saving</string>
+
+    <string name="common_training_aurally_title">Aurally</string>
+    <string name="common_training_in_english_title">In English</string>
+    <string name="common_training_in_russian_title">In Russian</string>
+    <string name="common_training_in_english_and_russian_title">In English and Russian</string>
+    <string name="common_training_enter_word_title">Enter Word</string>
+
+    <string name="common_title_save_the_database">Save the database</string>
+    <string name="common_upload_the_database">Upload the database</string>
+    <string name="common_database_share_text">Beebox Database\nv%d\n%s\n%s\nWords: %d\nCategories: %d\nTypes: %d</string>
+    <string name="common_to_telegram">To Telegram</string>
+    <string name="common_choose_file">Choose a file</string>
+    <string name="common_error_opening_db_file">Error opening database file</string>
+    <string name="common_error_copying_db_file">Error copying database file</string>
+    <string name="common_backup_info">v%d\nWords: %d\nCategories: %d\nTypes: %d</string>
+
+    <string name="common_login_to_biometrics">Login to biometrics</string>
+    <string name="common_scan_your_fingerprint">Scan your fingerprint</string>
+
+    <string name="common_failed">Failed</string>
+    <string name="common_successful">Successful</string>
+
+    <!--  Auth  -->
+    <string name="common_fingerprint_test">Fingerprint test</string>
+    <string name="common_launch_app">Launch App</string>
+
+</resources>

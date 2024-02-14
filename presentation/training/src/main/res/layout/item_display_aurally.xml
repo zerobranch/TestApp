@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    tools:background="@color/common_white"
+    >
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guid_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+    <View
+        android:id="@+id/v_us_space"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="-10dp"
+        android:background="@drawable/common_bg_round_rect_bordered_ripple"
+        app:layout_constraintBottom_toBottomOf="@id/tv_us_title"
+        app:layout_constraintEnd_toStartOf="@id/guid_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_us_title"
+        />
+
+    <View
+        android:id="@+id/v_uk_space"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-10dp"
+        android:background="@drawable/common_bg_round_rect_bordered_ripple"
+        app:layout_constraintBottom_toBottomOf="@id/tv_uk_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guid_line"
+        app:layout_constraintTop_toTopOf="@id/tv_uk_title"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_us_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/common_spacing_8"
+        android:drawableTint="@color/common_text_primary"
+        android:gravity="center"
+        android:text="@string/common_usa_title"
+        android:textAppearance="?H2"
+        android:textColor="@color/common_text_primary"
+        app:drawableEndCompat="@drawable/common_ic_volume"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_uk_title"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textSize="17sp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_uk_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_spacing_30"
+        android:drawablePadding="@dimen/common_spacing_8"
+        android:drawableTint="@color/common_text_primary"
+        android:gravity="center"
+        android:text="@string/common_brith_title"
+        android:textAppearance="?H2"
+        android:textColor="@color/common_text_primary"
+        app:drawableEndCompat="@drawable/common_ic_volume"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_us_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_us_title"
+        tools:textSize="17sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

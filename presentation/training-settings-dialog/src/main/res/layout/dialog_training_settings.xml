@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/common_spacing_28"
+    tools:background="@color/common_bg_primary"
+    >
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/common_spacing_24"
+        android:layout_marginTop="@dimen/common_spacing_20"
+        android:textAppearance="?H2"
+        android:textColor="@color/common_text_primary"
+        app:layout_constraintEnd_toStartOf="@id/ib_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Are you sure?"
+        tools:textSize="18sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ib_close"
+        style="@style/CommonRoundRectButtonStyle"
+        android:layout_marginEnd="@dimen/common_spacing_12"
+        android:padding="@dimen/common_spacing_8"
+        android:src="@drawable/common_ic_close_large"
+        android:tint="@color/common_text_primary"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_title"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/common_spacing_16"
+        android:layout_marginTop="@dimen/common_spacing_16"
+        android:text="@string/common_category"
+        android:textAppearance="?DefaultSemiBold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ib_close"
+        tools:textSize="15sp"
+        />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/common_spacing_16"
+        app:chipSpacingHorizontal="@dimen/common_spacing_10"
+        app:chipSpacingVertical="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_category"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib_add_category"
+            style="@style/CommonRoundRectButtonStyle"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/common_ic_add"
+            android:tint="@color/common_text_primary"
+            />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_word_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/common_spacing_16"
+        android:text="@string/common_word_type"
+        android:textAppearance="?DefaultSemiBold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chip_group_category"
+        tools:textSize="15sp"
+        />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group_word_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/common_spacing_16"
+        app:chipSpacingHorizontal="@dimen/common_spacing_10"
+        app:chipSpacingVertical="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_word_type"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib_add_word_type"
+            style="@style/CommonRoundRectButtonStyle"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/common_ic_add"
+            android:tint="@color/common_text_primary"
+            />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_launch"
+        style="@style/CommonBaseButton.Primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/common_spacing_16"
+        android:layout_marginTop="@dimen/common_spacing_20"
+        android:enabled="false"
+        android:paddingVertical="@dimen/common_spacing_8"
+        android:text="@string/common_launch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chip_group_word_type"
+        tools:textColor="#A2C4FF"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

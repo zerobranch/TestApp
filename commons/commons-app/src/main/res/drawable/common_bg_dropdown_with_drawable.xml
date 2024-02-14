@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_window_focused="false">
+        <layer-list>
+            <item android:drawable="@drawable/common_bg_dropdown" />
+            <item android:drawable="@drawable/common_ic_arrow_top" android:end="5dp" android:gravity="center_vertical|end" />
+        </layer-list>
+    </item>
+    <item android:state_window_focused="true">
+        <layer-list>
+            <item android:drawable="@drawable/common_bg_dropdown" />
+            <item android:drawable="@drawable/common_ic_arrow_bottom" android:end="5dp" android:gravity="center_vertical|end" />
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:drawable="@drawable/common_bg_dropdown" />
+            <item android:drawable="@drawable/common_ic_arrow_bottom" android:end="5dp" android:gravity="center_vertical|end" />
+        </layer-list>
+    </item>
+</selector>

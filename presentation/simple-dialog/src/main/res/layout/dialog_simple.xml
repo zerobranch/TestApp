@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/common_spacing_8"
+    android:paddingBottom="@dimen/common_spacing_12"
+    tools:background="@color/common_white"
+    >
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/common_spacing_24"
+        android:textAppearance="?H2"
+        android:textColor="@color/common_text_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Are you sure?"
+        tools:textSize="18sp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?DefaultMedium"
+        android:textColor="@color/common_text_primary"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:text="Delete the category"
+        tools:textSize="15sp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_spacing_16"
+        android:layout_marginTop="@dimen/common_spacing_16"
+        android:background="@drawable/common_bg_round_rect_bordered_ripple"
+        android:paddingHorizontal="@dimen/common_spacing_8"
+        android:textAppearance="?DefaultBold"
+        android:textColor="@color/common_text_primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_description"
+        tools:text="Cancel"
+        tools:textSize="15sp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/common_spacing_16"
+        android:background="@drawable/common_bg_round_rect_bordered_ripple"
+        android:paddingHorizontal="@dimen/common_spacing_8"
+        android:textAppearance="?DefaultBold"
+        android:textColor="@color/common_red"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Action"
+        tools:textSize="15sp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_neural"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/common_spacing_16"
+        android:background="@drawable/common_bg_round_rect_bordered_ripple"
+        android:paddingHorizontal="@dimen/common_spacing_8"
+        android:textAppearance="?DefaultBold"
+        android:textColor="@color/common_red"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_cancel"
+        app:layout_constraintEnd_toStartOf="@id/tv_action"
+        tools:text="Neural"
+        tools:textSize="15sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

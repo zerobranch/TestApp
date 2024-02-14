@@ -1,0 +1,74 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="BaseTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+
+        <item name="colorPrimary">@color/common_primary</item>
+        <item name="colorOnPrimary">@color/common_on_primary</item>
+        <item name="colorPrimaryVariant">@color/common_primary_variant</item>
+
+        <item name="colorSecondary">@color/common_secondary</item>
+        <item name="colorOnSecondary">@color/common_on_secondary</item>
+        <item name="colorSecondaryVariant">@color/common_secondary_variant</item>
+
+        <item name="colorTertiary">@color/common_tertiary</item>
+        <item name="colorOnTertiary">@color/common_on_tertiary</item>
+
+        <item name="android:statusBarColor">@color/common_almost_transparent</item>
+        <item name="android:navigationBarColor">@color/common_almost_transparent</item>
+
+        <item name="android:windowBackground">@color/common_bg_primary</item>
+        <item name="android:colorBackground">@color/common_bg_primary</item>
+        <item name="background">@color/common_bg_primary</item>
+        <item name="scrimBackground">@color/common_bg_primary</item>
+        <item name="colorOnBackground">@color/common_on_bg_primary</item>
+
+        <item name="colorSurface">@color/common_bg_primary</item>
+        <item name="colorOnSurface">@color/common_on_bg_primary</item>
+
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="p">shortEdges</item>
+
+        <item name="colorControlHighlight">@color/common_ripple_primary</item>
+        <item name="elevationOverlayEnabled">false</item>
+
+        <item name="dividerItemStyle">@style/CommonDividerStyle</item>
+
+        <item name="actionBarSize">@dimen/common_root_toolbar_height</item>
+        <item name="toolbarStyle">@style/CommonToolbar</item>
+        <item name="circularProgressIndicatorStyle">@style/CircularProgressIndicatorStyle</item>
+        <item name="bottomNavigationStyle">@style/BottomNavigationViewStyle</item>
+        <item name="notificationViewStyle">@style/ErrorNotificationViewStyle</item>
+        <item name="floatingActionButtonStyle">@style/FloatingActionButtonStyle</item>
+
+        <item name="H1">@style/CommonH1</item>
+        <item name="H2">@style/CommonH2</item>
+        <item name="SmallMedium">@style/CommonSmallMedium</item>
+        <item name="DefaultSemiBold">@style/CommonDefaultSemiBold</item>
+        <item name="DefaultMedium">@style/CommonDefaultMedium</item>
+        <item name="DefaultBold">@style/CommonDefaultBold</item>
+        <item name="SecondBold">@style/CommonSecondBold</item>
+        <item name="TabLayoutTextAppearance">@style/TabLayoutTextAppearance</item>
+
+        <item name="android:spinnerStyle">@style/SpinnerStyle</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemStyle</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemStyle</item>
+    </style>
+
+    <style name="BaseTheme.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/common_bg_primary</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/common_bg_primary</item>
+        <item name="windowSplashScreenAnimatedIcon">@color/common_transparent</item>
+        <item name="postSplashScreenTheme">@style/BaseTheme.AppTheme</item>
+    </style>
+
+    <style name="BaseTheme.AppTheme">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+</resources>

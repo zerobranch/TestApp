@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="PopupMenuTheme">
+        <item name="popupMenuStyle">@style/PopupMenuStyle</item>
+        <item name="android:textColor">@color/common_text_primary</item>
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+
+    <style name="PopupMenuStyle">
+        <item name="android:popupBackground">@drawable/bg_popup_menu</item>
+        <item name="android:dropDownHorizontalOffset">@dimen/common_spacing_15</item>
+    </style>
+
+    <style name="CommonBaseAlertDialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="dialogCornerRadius">@dimen/common_spacing_15</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:background">@color/common_on_bg_secondary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <item name="colorControlHighlight">@color/common_ripple_primary</item>
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="dividerItemStyle">@style/CommonDividerStyle</item>
+        <item name="circularProgressIndicatorStyle">@style/CircularProgressIndicatorStyle</item>
+        <item name="notificationViewStyle">@style/ErrorNotificationViewStyle</item>
+        <item name="floatingActionButtonStyle">@style/FloatingActionButtonStyle</item>
+
+        <item name="H1">@style/CommonH1</item>
+        <item name="H2">@style/CommonH2</item>
+        <item name="SmallMedium">@style/CommonSmallMedium</item>
+        <item name="DefaultSemiBold">@style/CommonDefaultSemiBold</item>
+        <item name="DefaultMedium">@style/CommonDefaultMedium</item>
+        <item name="DefaultBold">@style/CommonDefaultBold</item>
+        <item name="SecondBold">@style/CommonSecondBold</item>
+        <item name="TabLayoutTextAppearance">@style/TabLayoutTextAppearance</item>
+
+        <item name="android:spinnerStyle">@style/SpinnerStyle</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemStyle</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemStyle</item>
+    </style>
+
+    <style name="CommonBaseBottomSheetDialogTheme" parent="Theme.Material3.DayNight.BottomSheetDialog">
+        <item name="android:statusBarColor">@color/common_almost_transparent</item>
+        <item name="android:navigationBarColor">@color/common_almost_transparent</item>
+
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="colorControlHighlight">@color/common_ripple_primary</item>
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="dividerItemStyle">@style/CommonDividerStyle</item>
+        <item name="circularProgressIndicatorStyle">@style/CircularProgressIndicatorStyle</item>
+        <item name="notificationViewStyle">@style/ErrorNotificationViewStyle</item>
+        <item name="floatingActionButtonStyle">@style/FloatingActionButtonStyle</item>
+
+        <item name="H1">@style/CommonH1</item>
+        <item name="H2">@style/CommonH2</item>
+        <item name="SmallMedium">@style/CommonSmallMedium</item>
+        <item name="DefaultSemiBold">@style/CommonDefaultSemiBold</item>
+        <item name="DefaultMedium">@style/CommonDefaultMedium</item>
+        <item name="DefaultBold">@style/CommonDefaultBold</item>
+        <item name="SecondBold">@style/CommonSecondBold</item>
+        <item name="TabLayoutTextAppearance">@style/TabLayoutTextAppearance</item>
+
+        <item name="android:spinnerStyle">@style/SpinnerStyle</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemStyle</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemStyle</item>
+    </style>
+
+    <style name="CommonBaseBottomSheetDialogTheme.Small">
+        <item name="bottomSheetStyle">@style/CommonSmallRadiusBottomSheetStyle</item>
+    </style>
+
+    <style name="CommonBaseBottomSheetDialogTheme.Large">
+        <item name="bottomSheetStyle">@style/CommonBottomSheetStyle</item>
+    </style>
+
+    <style name="CommonSmallRadiusBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/common_bg_rounded_bottom_sheet_small</item>
+        <item name="android:backgroundTint">@color/common_bg_primary</item>
+    </style>
+
+    <style name="CommonBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/common_bg_rounded_bottom_sheet</item>
+        <item name="android:backgroundTint">@color/common_bg_primary</item>
+    </style>
+
+    <style name="CommonDefaultCardViewStyle">
+        <item name="rippleColor">@color/common_ripple_primary</item>
+        <item name="android:theme">@style/Widget.Material3.CardView.Filled</item>
+        <item name="cardCornerRadius">@dimen/common_corner_radius</item>
+        <item name="cardBackgroundColor">@color/common_on_bg_primary</item>
+        <item name="cardElevation">12dp</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <style name="CommonDefaultCardViewStyle.TabletAdaptable">
+        <item name="android:layout_marginStart">@dimen/common_spacing_10</item>
+        <item name="android:layout_marginEnd">@dimen/common_spacing_10</item>
+    </style>
+
+    <style name="CommonBaseEditText">
+        <item name="android:layout_height">@dimen/common_field_height</item>
+        <item name="android:theme">@style/CommonThemeEditText</item>
+        <item name="drawableTint">@color/common_tertiary</item>
+        <item name="android:paddingStart">@dimen/common_spacing_12</item>
+        <item name="android:paddingEnd">@dimen/common_spacing_8</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@drawable/common_bg_rounded_corners</item>
+        <item name="android:backgroundTint">@color/common_bg_primary_edittext</item>
+    </style>
+
+    <style name="CommonBaseEditText.Primary">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?DefaultSemiBold</item>
+        <item name="android:textColorHint">@color/common_hint_primary</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/common_text_primary_edittext</item>
+    </style>
+
+    <style name="CommonThemeEditText">
+        <item name="colorSecondary">@color/common_primary</item>
+        <item name="android:textColorHighlight">@color/common_highlight_primary</item>
+    </style>
+
+    <style name="CommonDividerStyle">
+        <item name="dividerItemThickness">1dp</item>
+        <item name="dividerItemColor">@color/common_divider_primary</item>
+        <item name="dividerInsetStart">@dimen/common_spacing_10</item>
+        <item name="dividerInsetEnd">@dimen/common_spacing_10</item>
+        <item name="showLastItemDecoration">true</item>
+    </style>
+
+    <style name="CommonSkeletonItemStyle">
+        <item name="android:background">@drawable/common_bg_rounded_corners</item>
+        <item name="android:backgroundTint">@color/common_skeleton_base_color</item>
+    </style>
+
+    <style name="CommonTabLayoutStyle" parent="Widget.Material3.TabLayout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/common_bg_primary</item>
+        <item name="tabSelectedTextColor">@color/common_text_primary</item>
+        <item name="tabTextColor">@color/common_dark_alternative_blue</item>
+        <item name="tabTextAppearance">?TabLayoutTextAppearance</item>
+        <item name="tabUnboundedRipple">true</item>
+        <item name="tabRippleColor">@color/common_transparent</item>
+        <item name="tabPaddingStart">@dimen/common_spacing_4</item>
+        <item name="tabPaddingEnd">@dimen/common_spacing_4</item>
+        <item name="tabPaddingTop">@dimen/common_spacing_5</item>
+        <item name="tabPaddingBottom">@dimen/common_spacing_5</item>
+        <item name="tabMode">fixed</item>
+    </style>
+
+    <style name="CommonToolbar" parent="Widget.Material3.Toolbar">
+        <item name="contentInsetStart">@dimen/common_spacing_12</item>
+        <item name="contentInsetEnd">@dimen/common_spacing_12</item>
+        <item name="titleTextAppearance">?H1</item>
+        <item name="subtitleTextAppearance">?DefaultSemiBold</item>
+        <item name="titleTextColor">@color/common_text_primary</item>
+        <item name="subtitleTextColor">@color/common_text_primary</item>
+        <item name="navigationIconTint">@color/common_text_primary</item>
+        <item name="subtitleCentered">true</item>
+        <item name="android:background">@color/common_bg_primary</item>
+        <item name="navigationContentDescription">@string/common_back</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+    </style>
+
+    <style name="FloatingActionButtonStyle" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">@color/common_primary</item>
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">@color/common_primary</item>
+        <item name="backgroundTint">@color/common_white</item>
+        <item name="fabSize">normal</item>
+        <item name="rippleColor">@color/common_ripple_primary</item>
+        <item name="tint">@color/common_primary</item>
+        <item name="shapeAppearanceOverlay">@style/FloatingActionShapeAppearanceOverlay</item>
+    </style>
+
+    <style name="FloatingActionShapeAppearanceOverlay">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="CircularProgressIndicatorStyle" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="android:indeterminate">true</item>
+        <item name="trackCornerRadius">10dp</item>
+    </style>
+
+    <style name="ErrorNotificationViewStyle">
+        <item name="actionRippleColor">@color/common_notification_ripple</item>
+        <item name="backgroundTint">@color/common_tertiary</item>
+        <item name="leftIconTint">@color/common_notification_left_icon_tint</item>
+
+        <item name="titleTextColor">@color/common_notification_title_color</item>
+        <item name="subtitleTextColor">@color/common_notification_subtitle_color</item>
+        <item name="actionTextColor">@color/common_notification_action_color</item>
+
+        <item name="subtitleTextAppearance">@style/CommonSmallMedium</item>
+        <item name="titleTextAppearance">@style/CommonSmallMedium</item>
+        <item name="actionTextAppearance">@style/CommonDefaultSemiBold</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/common_bg_dropdown_with_drawable</item>
+        <item name="android:popupElevation">0.1dp</item>
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <item name="android:dropDownVerticalOffset">@dimen/common_spacing_5</item>
+        <item name="android:popupBackground">@drawable/common_bg_dropdown</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+    <style name="SpinnerItemStyle">
+        <item name="android:textColor">@color/common_text_primary</item>
+        <item name="android:paddingStart">@dimen/common_spacing_15</item>
+        <item name="android:textAppearance">?DefaultMedium</item>
+    </style>
+
+    <style name="SpinnerDropDownItemStyle">
+        <item name="android:textColor">@color/common_dropdown_text</item>
+        <item name="android:paddingStart">@dimen/common_spacing_15</item>
+        <item name="android:drawablePadding">@dimen/common_spacing_5</item>
+        <item name="android:textAppearance">?DefaultMedium</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+</resources>

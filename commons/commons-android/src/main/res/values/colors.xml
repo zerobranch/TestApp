@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="utils_android_swipe_to_delete_icon_bg_tint">#E0EBFF</color>
+    <color name="utils_android_swipe_to_delete_icon_tint">#343B4C</color>
+    <color name="utils_android_almost_transparent">#01000000</color>
+</resources>

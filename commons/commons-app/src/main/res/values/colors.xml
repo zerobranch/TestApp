@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="common_white">#FFFFFF</color>
+    <color name="common_black">#000000</color>
+    <color name="common_transparent">#00000000</color>
+    <color name="common_almost_transparent">#01000000</color>
+
+    <color name="common_aquamarine">#00BAAD</color>
+    <color name="common_aquamarine_dark">#00847B</color>
+    <color name="common_fuchsia_dark">#980B6B</color>
+
+    <color name="common_red">#F44336</color>
+    <color name="common_red_85">#FF6F68</color>
+    <color name="common_dark_red">#E54D46</color>
+
+    <color name="common_dark_green">#209600</color>
+
+    <color name="common_yellow_1">#FFF8E5</color>
+    <color name="common_middle_yellow">#E6AD00</color>
+    <color name="common_dark_yellow">#A07800</color>
+
+    <color name="common_beebox_blue">#3F51B5</color>
+    <color name="common_beebox_blue_30">#4D3F51B5</color>
+    <color name="common_dark_blue">#2F3C88</color>
+    <color name="common_alternative_blue">#649DFF</color>
+    <color name="common_alternative_blue_6">#A2C4FF</color>
+    <color name="common_alternative_blue_4">#C1D8FF</color>
+    <color name="common_alternative_blue_2">#E0EBFF</color>
+    <color name="common_alternative_blue_1">#EFF5FF</color>
+    <color name="common_alternative_blue_0">#F7FAFF</color>
+    <color name="common_alternative_blue_05">#FAFAFF</color>
+    <color name="common_dark_alternative_blue">#4A7DFD</color>
+
+    <color name="common_carbone">#343B4C</color>
+    <color name="common_light_carbone">#62687F</color>
+    <color name="common_light_carbone_5">#4A5165</color>
+    <color name="common_dark_carbone">#1F2431</color>
+
+    <color name="common_cloud_gray">#8D96B2</color>
+    <color name="common_cloud_gray_7">#AFB5C9</color>
+    <color name="common_cloud_gray_1">#F3F4F7</color>
+    <color name="common_dark_cloud_gray">#777E98</color>
+
+    <color name="common_primary">@color/common_beebox_blue</color>
+    <color name="common_primary_disable">#663F51B5</color>
+    <color name="common_primary_variant">@color/common_dark_blue</color>
+    <color name="common_on_primary">@color/common_white</color>
+
+    <color name="common_secondary">@color/common_alternative_blue_1</color>
+    <color name="common_secondary_variant">@color/common_white</color>
+    <color name="common_on_secondary">@color/common_white</color>
+
+    <color name="common_bg_secondary">@color/common_alternative_blue_1</color>
+    <color name="common_on_bg_secondary">@color/common_white</color>
+
+    <color name="common_tertiary">@color/common_carbone</color>
+    <color name="common_on_tertiary">@color/common_white</color>
+
+    <color name="common_bg_primary">@color/common_white</color>
+    <color name="common_light_bg_primary">@color/common_alternative_blue_2</color>
+    <color name="common_on_bg_primary">@color/common_white</color>
+
+    <color name="common_ripple_primary">#0D3F51B5</color>
+    <color name="common_ripple_on_primary">#1AFFFFFF</color>
+
+    <color name="common_text_primary">@color/common_carbone</color>
+    <color name="common_text_primary_disable">#66343B4C</color>
+    <color name="common_text_on_primary">@color/common_on_primary</color>
+
+    <color name="common_disabled">@color/common_cloud_gray_7</color>
+
+    <color name="common_text_secondary">@color/common_cloud_gray</color>
+
+    <color name="common_divider_primary">#80EAEAEA</color>
+
+    <color name="common_hint_primary">@color/common_dark_cloud_gray</color>
+    <color name="common_highlight_primary">@color/common_alternative_blue_4</color>
+
+    <color name="common_home_toolbar">@color/common_primary</color>
+
+    <color name="common_navigation_bar_bg">@color/common_white</color>
+
+    <color name="common_bg_button_inactive">@color/common_cloud_gray_1</color>
+    <color name="common_button_text_on_primary">#AFB6C9</color>
+
+    <color name="common_notification_left_icon_tint">@color/common_red_85</color>
+    <color name="common_notification_title_color">@color/common_white</color>
+    <color name="common_notification_subtitle_color">@color/common_cloud_gray</color>
+    <color name="common_notification_action_color">@color/common_alternative_blue_6</color>
+    <color name="common_notification_ripple">#1AA2C4FF</color>
+
+    <color name="common_skeleton_base_color">@color/common_alternative_blue_1</color>
+    <color name="common_skeleton_highlight_color">@color/common_alternative_blue_2</color>
+
+    <color name="common_thumb_checked_color">@color/common_white</color>
+    <color name="common_thumb_unchecked_color">@color/common_alternative_blue_6</color>
+
+    <color name="common_favorites_unchecked_color">@color/common_tertiary</color>
+
+    <color name="common_active_color">@color/common_alternative_blue_2</color>
+    <color name="common_shadow_color">#333F51B5</color>
+
+    <color name="common_enabled_switch_shadow">@color/common_beebox_blue_30</color>
+    <color name="common_disabled_switch_shadow">@color/common_alternative_blue_6</color>
+    <color name="common_transparent_black">#80000000</color>
+
+    <color name="common_hint_background">@color/common_yellow_1</color>
+    <color name="common_loader_track_background">@color/common_primary</color>
+
+    <color name="common_round_border_color">@color/common_alternative_blue_4</color>
+    <color name="common_selected_bg">#1203A9F4</color>
+    <color name="common_selector_color">#673AB7</color>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="common_primary">@color/common_alternative_blue</color>
+    <color name="common_on_primary">@color/common_alternative_blue_1</color>
+
+    <color name="common_secondary">@color/common_light_carbone_5</color>
+    <color name="common_secondary_variant">@color/common_carbone</color>
+    <color name="common_on_secondary">@color/common_white</color>
+
+    <color name="common_bg_secondary">@color/common_dark_carbone</color>
+    <color name="common_on_bg_secondary">@color/common_carbone</color>
+
+    <color name="common_tertiary">@color/common_alternative_blue_1</color>
+    <color name="common_on_tertiary">@color/common_white</color>
+
+    <color name="common_bg_primary">@color/common_dark_carbone</color>
+    <color name="common_light_bg_primary">@color/common_light_carbone</color>
+    <color name="common_on_bg_primary">@color/common_carbone</color>
+
+    <color name="common_ripple_primary">#0D649DFF</color>
+    <color name="common_ripple_on_primary">#1AFFFFFF</color>
+
+    <color name="common_text_primary">@color/common_cloud_gray_1</color>
+    <color name="common_text_on_primary">@color/common_on_primary</color>
+
+    <color name="common_disabled">@color/common_light_carbone</color>
+</resources>

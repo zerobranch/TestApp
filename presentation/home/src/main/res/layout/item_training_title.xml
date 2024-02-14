@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CommonDefaultCardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/common_spacing_8"
+    tools:background="@color/common_bg_primary"
+    >
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/common_spacing_8"
+        android:textAppearance="?H1"
+        android:textColor="@color/common_text_primary"
+        tools:text="Перевод"
+        tools:textSize="18sp"
+        />
+
+</com.google.android.material.card.MaterialCardView>

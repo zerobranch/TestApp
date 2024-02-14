@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textview.MaterialTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?selectableItemBackground"
+    android:ellipsize="end"
+    android:lines="1"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/common_spacing_12"
+    android:paddingVertical="@dimen/common_spacing_4"
+    android:textAppearance="?DefaultMedium"
+    android:textColor="@color/common_text_primary"
+    tools:background="@color/common_white"
+    tools:text="will — воля, желание, завещание, волеизъявление, хотеть, желать, завещать, проявлять волю"
+    tools:textSize="13sp"
+    />

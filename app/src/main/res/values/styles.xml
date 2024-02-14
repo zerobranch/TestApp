@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomNavigationViewStyle" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemTextColor">@color/common_transparent</item>
+        <item name="materialThemeOverlay">@style/BottomNavigationOverlay</item>
+        <item name="elevation">8dp</item>
+        <item name="itemRippleColor">@android:color/transparent</item>
+        <item name="itemIconTint">@color/color_bottom_navigation_item</item>
+        <item name="itemActiveIndicatorStyle">@style/BottomNavigationActiveIndicatorStyle</item>
+        <item name="backgroundTint">@color/common_bg_primary</item>
+        <item name="itemPaddingTop">@dimen/design_bottom_navigation_margin</item>
+        <item name="itemPaddingBottom">@dimen/design_bottom_navigation_label_padding</item>
+        <item name="itemBackground">@drawable/selector_tab_background</item>
+        <item name="android:minHeight">@dimen/design_bottom_navigation_height</item>
+    </style>
+
+    <style name="BottomNavigationOverlay">
+        <item name="colorOnSurface">@color/common_bg_primary</item>
+    </style>
+
+    <style name="BottomNavigationActiveIndicatorStyle" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/common_transparent</item>
+        <item name="android:width">@dimen/navigation_indicator_size</item>
+        <item name="android:height">@dimen/navigation_indicator_size</item>
+        <item name="marginHorizontal">0dp</item>
+        <item name="shapeAppearance">
+            @style/ShapeAppearance.Material3.NavigationBarView.ActiveIndicator
+        </item>
+    </style>
+
+</resources>

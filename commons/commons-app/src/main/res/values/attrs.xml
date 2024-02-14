@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="H1" type="reference" />
+    <attr name="H2" type="reference" />
+    <attr name="SmallMedium" type="reference" />
+    <attr name="DefaultSemiBold" type="reference" />
+    <attr name="DefaultMedium" type="reference" />
+    <attr name="DefaultBold" type="reference" />
+    <attr name="SecondBold" type="reference" />
+    <attr name="TabLayoutTextAppearance" type="reference" />
+</resources>

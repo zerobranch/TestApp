@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_search"
+        style="@style/CommonBaseEditText.Primary"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/common_spacing_12"
+        android:layout_marginTop="@dimen/common_spacing_16"
+        android:drawableEnd="@drawable/common_ic_search"
+        android:drawableTint="@color/common_text_on_primary"
+        android:hint="@string/common_search_word"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:lines="1"
+        tools:textSize="15sp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingVertical="@dimen/common_spacing_8"
+        tools:itemCount="10"
+        tools:listitem="@layout/common_item_word"
+        />
+
+</LinearLayout>

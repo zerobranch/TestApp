@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ib_add_hint"
+    style="@style/CommonRoundRectButtonStyle"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_marginStart="@dimen/common_spacing_16"
+    android:src="@drawable/common_ic_add"
+    android:tint="@color/common_text_primary"
+    />

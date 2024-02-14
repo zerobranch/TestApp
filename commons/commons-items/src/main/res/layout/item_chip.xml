@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp"
+    android:layout_gravity="center_vertical"
+    android:clickable="false"
+    android:gravity="center"
+    android:textAppearance="?DefaultSemiBold"
+    android:textColor="@color/common_text_primary"
+    app:chipBackgroundColor="@color/common_white"
+    app:chipCornerRadius="@dimen/common_corner_radius"
+    app:closeIcon="@drawable/common_ic_close_large"
+    app:closeIconEnabled="true"
+    app:closeIconStartPadding="0dp"
+    app:closeIconTint="@color/common_text_primary"
+    tools:text="hard"
+    />
